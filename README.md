@@ -10,6 +10,12 @@ A full-stack project to collect, store, and display user feedback.
 
 ### Backend
 ```bash
-cd backend
+cd feedback-backend
 npm install
 npm run start
+
+### Frontend
+```bash
+cd feedback-frontend
+npm install
+npm run dev
