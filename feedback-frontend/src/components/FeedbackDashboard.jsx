@@ -10,7 +10,7 @@ function FeedbackDashboard() {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/feedback');
+                const { data } = await axios.get('https://user-feeback-system.onrender.com/api/feedback');
                 setFeedbacks(data);
             } catch (error) {
                 console.error("Error fetching feedbacks:", error);

@@ -19,7 +19,7 @@ function FeedbackForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/feedback', formData);
+            await axios.post('https://user-feeback-system.onrender.com/api/feedback', formData);
             setFormData({ userName: '', email: '', feedbackText: '', category: 'Suggestion' });
             navigate('/')
         } catch (err) {
